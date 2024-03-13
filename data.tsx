@@ -3,7 +3,7 @@ import type { Job } from "./components/job-description";
 
 export const leftBullets = [
   { prio: 1, header: `Languages`, items: [`TypeScript`, `JavaScript`, `C++ (limited proficiency)`] },
-  { prio: 5, header: `Frameworks`, items: [`React Native`, `NativeScript`, `React`, `AngularJS`, 'Express.js', `NestJS`, 'Serverless'] },
+  { prio: 5, header: `Frameworks`, items: ['Express.js', `NestJS`, 'Serverless', `React Native`, `NativeScript`, `React`, `AngularJS`] },
   { prio: 20, header: `Databases`, items: [`Redis`, `MongoDB`, 'SQL (limited proficiency)'] }
 ]
 
@@ -11,20 +11,25 @@ export const bullets = [
   { prio: 11, header: `AWS`, items: [`EC2`, `IAM`, `S3`, `Lambda`, `Elasticsearch`] },
   { prio: 12, header: `Azure Cloud`, items: [`API`, `Marketplace Apps`, `Bot Services`] },
   { prio: 10, header: `DevOps`, items: [`Incident Management and SRE`, `Terraform`, `Bash`, `Gitlab CI/CD`, 'Docker'] },
-  { prio: 13, header: `Tools`, items: [`Git`, `Sentry`, `NewRelic`, 'Grafana'] },
+  { prio: 13, header: `Tools`, items: [`Git`, `Sentry`, `NewRelic`, 'Grafana', 'fastlane', 'bitrise (cloud CI/CD)'] },
 ]
+
+export const summaryBlocks = `As a seasoned Senior Full-Stack Software Engineer, I specialize in driving growth and innovation through a hands-on approach. With expertise in various web and cloud technologies, I've played a pivotal role in enhancing products and driving organizational success. I bring a track record of delivering results and thrive in dynamic environments where creativity and technical excellence are paramount.
+When I'm not immersed in work or other technical projects, I find a lot of fun and excitement in exploring immersive interactive events (LARPs) around the globe with my friends, a passion that fuels my creativity and adaptability.
+As a proud member of the LGBTQ+ community, I advocate for inclusivity and diversity in both professional and personal spaces. Additionally, my journey with ADHD has taught me the value of resilience and continuous learning, shaping my approaches to problem-solving. When not traveling or meeting with friends, I cozy up at home with my beloved bearded dragon Diablo.`.split('\n')
 
 export const jobs: readonly Job[] = [
   {
     position: `Principal Software Engineer`,
     time: `04/22 - 07/23`,
     location: `OfficeRnD, Sofia`,
-    description: `Leading a team of 10 engineers in designing, developing and growing OfficeRnD's latest in its porfolio - OfficeRnD Hybrid.`,
+    description: `Architecting, developing, and growing OfficeRnD's latest in its porfolio - OfficeRnD Hybrid.`,
     responsibilites:
-      `Planned and lead technical initiatives based on product requirements, and oversaw their progress.
+      `Engineered and implemented sophisticated systems based on product requirements.
+Planned and led technical initiatives based on product requirements, and oversaw their progress.
 Designed and implemented a resilient infrastructure for high availability and fault tolerance.
 Identified and managed technical debt.
-Contributed to company wide initiatives for technical conventions and improvements.`.split(
+Contributed to company-wide initiatives for technical conventions and improvements.`.split(
         `\n`
       ),
     techStack: `TypeScript, NestJS, AWS, CI/CD, APMs, React, React Native`.split(`, `),
@@ -35,14 +40,14 @@ Contributed to company wide initiatives for technical conventions and improvemen
     location: `OfficeRnD, Sofia`,
     description: `Architecting and implementing of complex systems and features. Adept at driving product growth, enhancing efficiency, and ensuring scalability. `,
     responsibilites:
-      `I spearheaded dynamic initiatives and played a pivotal role in the evolution of our products, contributing to four years of continuous growth and innovation.
+      `I spearheaded dynamic initiatives and played a pivotal role in the evolution of our products, contributing hands-on to four years of continuous growth and innovation.
       Product Growth: Led and executed initiatives that significantly contributed to product growth and enhanced customer acquisition, showcasing a strategic and results-driven approach.
       Architectural Leadership: Instrumental in engineering and deciding on architectural approaches for implementing complex systems and features, showcasing a deep understanding of the intricacies involved in creating robust and scalable solutions.
-      Efficiency Improvements and Scalability: Engineered comprehensive optimizations across the board, ensuring scalability to accommodate the expanding needs of our customer base. Demonstrated a commitment to enhancing and optimizing system efficiency.
+      Efficiency Improvements and Scalability: Engineered and implemented comprehensive optimizations across the board, ensuring scalability to accommodate the expanding needs of our customer base. Demonstrated a commitment to enhancing and optimizing system efficiency.
       Incident Management and DevOps Leadership: Assumed the role of Incident Manager/Site Reliability Engineer and acted as a stand-in DevOps resource, guaranteeing the uninterrupted functionality of interconnected systems, underscoring my dedication to system reliability.
       Mobile App Rework: Overhauled the ReactNative mobile app, implementing cutting-edge best practices to ensure a framework that facilitates continuous improvement, setting the groundwork for sustained quality in the development of the app.
       Mentorship and Team Onboarding: Played a key role in mentoring and onboarding numerous Junior and Regular Full-stack engineers, ensuring a seamless integration into organizational processes and projects.
-      OfficeRnD Hybrid: Led the development and deployment of OfficeRnD Hybrid in 2021, addressing a new market need. Successfully launched the product within a few months, contributing to the expansion of the OfficeRnD portfolio.`.split(
+      OfficeRnD Hybrid: Led the development and deployment of OfficeRnD Hybrid in 2021 hands-on, addressing a new market need. Successfully launched the product within a few months, contributing to the expansion of the OfficeRnD portfolio.`.split(
         `\n`
       ),
     techStack: `TypeScript, NestJS, AWS, Node.js, Express, Redis, MongoDB, SRE, CI/CD, React, React Native, Test Automation`.split(

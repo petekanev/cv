@@ -3,7 +3,7 @@ import Photo from "./assets/photo.png";
 import "./index.css";
 import { JobDescription } from "../components/job-description";
 import { SkillsList } from "../components/skill-list";
-import { leftBullets, jobs, bullets, certs, education } from "../data";
+import { leftBullets, jobs, bullets, summaryBlocks, certs, education } from "../data";
 import { Certifications } from "../components/certifications";
 
 const Header = () => (
@@ -14,6 +14,8 @@ const Header = () => (
     <div>
       <div>
         <h1>Peter Kanev</h1>
+        <strong data-emoji="📍">Copenhagen, Denmark</strong>
+        <hr />
         <p>Senior Software Engineer</p>
       </div>
       <div>
@@ -43,6 +45,16 @@ const Header = () => (
 export const Page = () => (
   <main>
     <Header />
+    <article>
+      <header>
+        <h2>Summary</h2>
+      </header>
+      <section style={{ width: `100%` }}>
+        <div>
+          {summaryBlocks.map((s) => (<p style={{ maxWidth: `80ch` }}>{s}</p>))}
+        </div>
+      </section>
+    </article>
     <article>
       <header>
         <h2>Programming Expertise</h2>
